@@ -1,0 +1,384 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Karla", Arial, Helvetica, sans-serif;
+}
+
+.container {
+    margin: auto;
+    width: 90%;
+}
+
+.header, .footer {
+    color: white;
+    background-color: blueviolet;
+}
+
+.header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 20px;
+}
+
+.header li, footer li {
+    display: inline-block;
+
+}
+
+.header li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 20px 10px;
+    margin: 0;
+}
+
+.header li a:hover {
+    text-decoration: underline;
+    background-color: #4B0082;
+}
+
+.main-grid-nist {
+    display: grid;
+    grid-template-columns: minmax(300px,300px) 1fr;
+    grid-column-gap: 25px;
+    margin: 20px 0;
+}
+.main-grid-nist p{
+    font-size: 14pt;
+    padding: 0;
+}
+.main-grid-md {
+    display: grid;
+    grid-template-columns: minmax(200px,200px) 1fr;
+    grid-column-gap: 25px;
+    margin: 20px 0;
+
+}
+
+.main-grid-md p{
+    font-size: 14pt;
+    padding: 0;
+}
+.footer{
+    text-align: center;
+    font-size: 16px;
+    padding: 15px 0;
+}
+.main-page{
+    margin: 10px;
+}
+/* Main page*/
+#banner{
+    text-align: center;
+    border-bottom: 2px solid gray;
+    font-size: 14pt;
+
+    background: url("https://previews.123rf.com/images/wektorygrafika/wektorygrafika1701/wektorygrafika170100050/69819313-binary-code-globe-vector-symbol-icon-design-beautiful-illustration-isolated-on-white-background.jpg") +1075px -10px;
+    background-repeat: no-repeat;
+    background-size: 120px 120px;
+}
+#banner h1{
+    margin-bottom: 0;
+    font-family: monospace;
+    font-size: 30pt;
+}
+
+#main-page-grid{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-column-gap: 20px;
+    margin: 20px 0;
+    font-size: 13pt;
+}
+
+
+/* Sidebar for nist and md pages*/
+.sidebar-menu ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 13pt;
+}
+.sidebar-menu li{
+
+    border: 1px solid gray;
+    border-bottom: none;
+}
+.sidebar-menu li a{
+    padding: 4px;
+    text-decoration: none;
+    display: block;
+
+}
+
+.sidebar-menu li a:visited{
+    color: black;
+}
+
+.sidebar-menu li a:hover, .active-test{
+    background-color: blueviolet;
+    color: white !important;
+}
+
+.sidebar-menu li:last-child{
+    border-bottom: 1px solid gray;
+}
+
+
+/* Majority of the form elements*/
+
+.test-button{
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 4px 13px;
+    text-shadow: 0 1px 1px #000000;
+    font-size: 14pt;
+}
+
+input[type="text"] {
+    padding: 3px;
+    border-radius: 3px;
+    border: 1px solid gray;
+    margin: 5px 10px;
+    font-size: 13pt;
+    outline-color: blueviolet;
+    font-family: Calibri, sans-serif;
+}
+input[type=checkbox]{
+    width: 15px;
+    height: 15px;
+    padding: 0;
+    margin: 0 4px 0 0 ;
+    vertical-align: bottom;
+    position: relative;
+    top: -4px;
+    *overflow: hidden;
+}
+textarea{
+    padding: 3px;
+    width: 400px;
+    border-radius: 3px;
+    border: 1px solid gray;
+    height: 5.75em;
+    font-size: 13pt;
+    outline-color: blueviolet;
+    font-family: Calibri, sans-serif;
+    resize: none;
+}
+label {
+    font-size: 14pt;
+    margin-top: 5px;
+}
+
+/* Direction buttons for chart slider*/
+.direction-button{
+    background-color: white;
+    font-weight: bolder;
+    border: 0;
+    font-size: 18pt;
+    display: inline-block;
+    outline-color: blueviolet;
+}
+.direction-button:disabled{
+    font-weight: normal;
+}
+
+/*Global error message style*/
+
+.error{
+    background-color: #ffcccb;
+    color: #8B0000;
+    padding: 10px;
+    width: 350px;
+    border-radius: 4px;
+    border: 1px solid #8B0000;
+}
+
+
+/* Md tests form and results*/
+#md-all-result th, #md-all-result td {
+    padding: 5px 15px 5px 0;
+}
+#md-all-result{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    border-top:2px solid #cccccc;
+}
+
+#md-all-result table{
+    border-collapse: collapse;
+}
+#md-all-result td{
+    border: 1px solid gray;
+    padding: 7px 9px;
+}
+
+.test-form{
+    border-radius: 4px;
+    background-color: white;
+    padding: 10px 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.formula-image img{
+    width: 80%;
+}
+.templates{
+    border-collapse: collapse;
+}
+.templates th, .templates td{
+    border: 1px solid gray;
+    padding: 10px;
+    text-align: center;
+}
+.templates th{
+    font-weight: bolder;
+    background-color: whitesmoke;
+}
+
+
+/* Input fields on the AllNist page*/
+#nist-additional-fields-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+
+}
+.nist-additional-fields{
+    margin: 0px 0px 0px 40px;
+}
+
+/* Results for AllNist Page*/
+
+#nist-all-result{
+    font-size: 13pt;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    border-top: 2px solid #cccccc;
+    padding: 20px;
+}
+
+#nist-all-result table{
+    margin-left: 30px;
+    border-collapse: collapse;
+
+}
+#nist-all-result th, #nist-all-result td{
+    border: 1px solid gray;
+    padding: 7px 9px;
+    text-align: center;
+}
+#nist-all-result tr:hover,  .nist-result-display tr:hover, #md-all-result tr:hover{
+    background-color: #cccccc;}
+
+.random{
+    background-color: #90ee90;
+}
+.non-random{
+    background-color: #ffcccb;
+}
+.table-test-name{
+    text-align: left !important;
+    font-weight: bolder;
+}
+
+
+/*Results for individual nist pages*/
+
+.nist-formula img{
+    width: 70%;
+}
+.test-form-nist{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.nist-result-display{
+    border-top: 2px solid gray;
+}
+
+.nist-result-display table{
+    border-collapse: collapse;
+    margin: 10px;
+}
+
+.nist-result-display td{
+    border: 1px solid gray;
+    padding: 7px 9px;
+}
+.nist-result-display span{
+
+    padding: 7px 9px;
+}
+
+@media screen and (max-width: 768px) {
+    .main-grid,#md-all-result,#nist-all-result, .test-form, #nist-additional-fields-grid, #main-page-grid, .test-form-nist{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* Unused styles
+
+#slider {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: blue;
+
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+}
+
+.slide-in {
+    animation: slide-in 0.5s forwards;
+    -webkit-animation: slide-in 0.5s forwards;
+}
+
+.slide-out {
+    animation: slide-out 0.5s forwards;
+    -webkit-animation: slide-out 0.5s forwards;
+}
+
+
+
+@keyframes slide-in {
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@-webkit-keyframes slide-in {
+    100% {
+        -webkit-transform: translateX(0%);
+    }
+}
+
+@keyframes slide-out {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@-webkit-keyframes slide-out {
+    0% {
+        -webkit-transform: translateX(0%);
+    }
+    100% {
+        -webkit-transform: translateX(-100%);
+    }
+}
+
+
+*/
