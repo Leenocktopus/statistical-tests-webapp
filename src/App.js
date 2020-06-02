@@ -6,15 +6,11 @@ import Footer from "./Footer";
 import MainPage from "./MainPage";
 import Tests from "./Tests";
 
-import store from "./history/Store";
-import {Provider} from "react-redux";
-
 class App extends Component {
 
 
     render() {
         return (
-            <Provider store={store}>
                 <Router>
                     <ScrollToTop>
                         <Header/>
@@ -22,9 +18,7 @@ class App extends Component {
                         <Route path={"/tests"} component={Tests}/>
                         <Footer/>
                     </ScrollToTop>
-
                 </Router>
-            </Provider>
         );
     }
 }
